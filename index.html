@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Application</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <style>
+        i {
+            pointer-events: none;
+        }
+    </style>
+
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-danger">
+        <div class="container">
+            <a href="#" class="navbar-brand">CRUD Application</a>
+
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav">
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <div class="alertMessages">
+            <!-- Danger Message ! -->
+        <!-- <div class="alert alert-danger alert-dismissible fade show">
+            <i class="bi bi-exclamation-circle-fill text-danger" style="font-size: 20px;"></i>
+            Hata !
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        </div> -->
+
+        <!-- Success Message ! -->
+        <!-- <div class="alert alert-success alert-dismissible fade show">
+            <i class="bi bi-check-circle-fill text-success" style="font-size: 20px;"></i>
+            İşlem Başarılı :)
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        </div> -->
+
+        </div>
+        
+
+        <div class="card">
+            <div class="card-body">
+                <form class="row" id="productForm">
+                    <div class="col-4">
+                        <input type="text" class="form-control name" placeholder="Name">
+                    </div>
+                    <div class="col-4">
+                        <input type="number" class="form-control price" placeholder="Price" min="1">
+                    </div>
+                    <div class="col-4">
+                        <input type="text" class="form-control brand" placeholder="Brand">
+                    </div>
+                    
+                    <div class="mt-3">
+                        <button type="submit" class="btn btn-primary btn-sm submitButton"><i class="fas fa-plus-circle"></i> Create</button>
+                        <button type="button" class="btn btn-warning btn-sm saveButton"><i class="far fa-edit"></i> Save Changes</button>
+                        <button type="button" class="btn btn-danger btn-sm deleteButton"><i class="far fa-trash-alt"></i> Delete</button>
+                        <button type="button" class="btn btn-secondary btn-sm cancelButton"><i class="fas fa-arrow-circle-left"></i> Cancel</button>
+                    </div>
+                
+                </form>               
+            </div>
+        </div>
+
+        <div class="card mt-3 tableCard">
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-bordered table-hover dataTable">
+                        <thead class="table-secondary">
+                            <tr>
+                                <th>Id</th>
+                                <th>Name</th>
+                                <th>Price</th>
+                                <th>Brand</th>
+                                <th>Events</th>
+                            </tr>
+                        </thead>
+                        <tbody class="tableBody">
+                            <!-- <tr>
+                                <td>1</td>
+                                <td>Ekran Kartı</td>
+                                <td>1600</td>
+                                <td>MSI</td>
+                                <td><button type="button" class="btn btn-primary btn-sm editButton"><i class="far fa-edit"></i> Edit</button></td>
+                            </tr> -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mt-3 text-end">
+            <div class="card-footer">
+                <p>Toplam Fiyat (TL): <b class="priceTL">0</b> <b><i class="fas fa-lira-sign"></i></b> </p>
+                <p>Toplam Fiyat ($): <b class="priceUSD">0</b> <b>$</b> </p>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>    
+    <script src="app.js"></script>
+</body>
+</html>
