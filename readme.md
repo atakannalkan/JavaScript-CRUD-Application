@@ -1,7 +1,7 @@
 
 # JavaScript ile CRUD Application
 
-![Uygulama Resmi](https://imgyukle.com/f/2022/02/22/ECKxZ1.png)
+![Uygulama Resmi](https://r.resimlink.com/fagN7o-.png)
 
 ## Uygulamaya genel bakış
 
